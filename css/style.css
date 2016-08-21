@@ -1,0 +1,25 @@
+/*Styles for Sedona*/
+
+body {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: bold;
+    font-family: "Pt Sans";
+}
+
+b {
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    font-weight: normal;
+    font-family: "Pt Sans";
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
+    font-family: "Pt Sans";
+}
