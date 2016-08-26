@@ -1,0 +1,302 @@
+/*Styles for Sedona*/
+
+body {
+    padding: 0 40px;
+    margin: 0px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: bold;
+    font-family: "Pt Sans";
+}
+
+b {
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    font-weight: normal;
+    font-family: "Pt Sans";
+}
+
+h2 {
+    margin: 0px;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
+    font-family: "Pt Sans";
+}
+
+p {
+    margin: 0px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-header {
+    padding: 0 73px;
+    width: 1056px;
+    margin: 0 auto;
+}
+
+.main-navigation {
+}
+
+.page-title {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+
+.content-title {
+    padding-top: 60px;
+    padding-bottom: 55px;
+}
+
+.banner {
+}
+
+.banner-text {
+    width: 400px;
+    min-height: 256px;
+    background-color: #81b3d2;
+}
+
+.banner-image {
+    height: 256px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.feature-item {
+    width: 400px;
+    float: left;
+    padding-top: 60px;
+    padding-bottom: 85px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.reasons {
+    background-color: #eeeeee;
+}
+
+.reasons-item {
+    float: left;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.offer-title {
+    padding-top: 55px;
+    padding-bottom: 140px;
+}
+
+.offer-form {
+    width: 570px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    width: 1056px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 73px;
+    padding-left: 73px;
+    margin: 0 auto;
+}
+
+.footer-hashtag {
+    float: left;
+    width: 240px;
+    margin-right: 88px;
+}
+
+.footer-social {
+    float: left;
+    width: 400px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 241px; 
+}
+
+.searchform-container {
+    padding: 35px 73px;
+}
+
+.search-form {
+    width: 1056px;
+}
+
+.checkbox-block {
+    float: left;
+    width: 255px;
+}
+
+.filter-range {
+    float: right;
+    width: 328px;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+    
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.search-results {
+}
+
+.search-results-panel {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    padding-right: 73px;
+    padding-left: 73px;
+}
+
+.search-result-item {
+    padding: 34px 73px;
+}
