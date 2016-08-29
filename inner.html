@@ -7,32 +7,32 @@
     </head>
     <body>
         <header class="main-header">
-            <nav class="main-navigation">
-                <ul>
-                    <li>
-                        <a href="#">Информация</a>
-                    </li>
-                    <li>
-                        <a href="#">Фото и видео</a>
-                    </li>
-                    <li>
-                        <a>
-                            <img src="img/logo.png" width="138" height="70" alt="Логотип">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Карта штата</a>
-                    </li>
-                    <li>
-                        <a href="#">Гостиницы</a>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="main-navigation clearfix">
+                    <ul>
+                        <li>
+                            <a href="#">Информация</a>
+                        </li>
+                        <li>
+                            <a href="#">Фото и видео</a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="img/logo.png" width="138" height="70" alt="Логотип">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Карта штата</a>
+                        </li>
+                        <li>
+                            <a href="#">Гостиницы</a>
+                        </li>
+                    </ul>
+                </nav>
         </header>
         <main class="container">
-            <div class="form">
-                <form action="#" method="get">
-                    <fieldset> 
+			<div class="searchform-container">
+                <form action="#" method="get" class="search-form clearfix">
+                    <fieldset class="checkbox-block"> 
                         <legend>Инфраструктура</legend>
                         <ul>
                             <li>
@@ -49,7 +49,7 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset> 
+                    <fieldset class="checkbox-block"> 
                         <legend>Тип жилья</legend>
                         <ul>
                             <li>
@@ -66,14 +66,31 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
-                        <legend>Стоимость в сутки (р):</legend>
-<!-- не смог определить как разметить эти элементы-->
-                        <input type="range" name="range" min="0" max="4000" step="500">
-                    </fieldset>
-                    <input type="submit" value="Показать" name="show">
+                    <div class="filter-range">
+                        <div class="filter-range-title">
+                            Стоимость в сутки (р):
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">от 
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">до 
+                                <input type="text" name="max-price" value="3000">
+                            </label>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="range-toggle range-toggle-min">
+                            </div>
+                            <div class="range-toggle range-toggle-max">
+                            </div>
+                        </div>
+                        <button class="btn-transparent" type="submit">Показать</button>
+                    </div>
                 </form>
-            </div>
+			</div>
             <div class="search-results">
                 <div class="search-results-panel">
                     <div class="search-results-count">
@@ -94,12 +111,8 @@
                         </ul>
                     </div>
                     <div class="search-results-buttons">
-                        <a href="">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="По возрвстанию">
-                        </a>
-                        <a href="">
-                            <img src="http://placehold.it/150x100" width="150" height="100" alt="По убыванию">
-                        </a>
+                        <button type="button" class="sort-up-button"></button>
+                        <button type="button" class="sort-down-button"></button>
                     </div>
                 </div>
                 <div class="search-results-items">
@@ -141,7 +154,7 @@
                 </div>
             </div>
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer clearfix">
             <div class="footer-hashtag">
                 #Visitsedona
             </div>
