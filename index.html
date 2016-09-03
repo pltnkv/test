@@ -3,44 +3,36 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
-                <nav class="main-navigation clearfix">
-                    <ul>
-                        <li>
+                <nav class="main-navigation">
+                    <ul class="clearfix">
+                        <li class="item-left">
                             <a href="#">Информация</a>
                         </li>
-                        <li>
+                        <li class="item-left">
                             <a href="#">Фото и видео</a>
                         </li>
-                        <li>
-                            <a>
+                        <li class="logo">
+                            <a href="#">
                                 <img src="img/logo.png" width="138" height="70" alt="Логотип">
                             </a>
                         </li>
-                        <li>
-                            <a href="#">Карта штата</a>
-                        </li>
-                        <li>
+						<li class="item-right">
                             <a href="#">Гостиницы</a>
+                        </li>
+                        <li class="item-right">
+                            <a href="#">Карта штата</a>
                         </li>
                     </ul>
                 </nav>
         </header>
         <main class="container">
-            <div class="page-title">
-                <div class="top-title">
-                    <p>Welcome <span>to the gordeous</span></p>
-                </div>
-                <div class="middle-title">
-                    <p>Sedona</p>
-                </div>
-                <div class="bottom-title">
-                    <p>Because the grand canyon sucks!</p>
-                </div>
-            </div>
+            <div class="page-title"></div>
             <div class="content">
                 <div class="content-title">
                     <h2>
@@ -53,8 +45,8 @@
                 </div>
                 <div class="banner clearfix">
                     <div class="banner-text left">
-                        <b>Настоящий городок</b>
-                        <span class="number"> №1</span>
+                        <b>Настоящий<br>городок</b>
+                        <span class="number"> - №1 -</span>
                         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <div class="banner-image right">
@@ -64,16 +56,19 @@
                 <div class="features clearfix">
                     <ul>
                         <li class="feature-item">
+							<div class="feature-item-image1"></div>
                             <b>Жилье</b>
-                            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            <p>Рекомендуем пожить в настоящем <br> мотеле, все как в кино!</p>
                         </li>
                         <li class="feature-item">
+							<div class="feature-item-image2"></div>
                             <b>Еда</b>
-                            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                            <p>Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
                         </li>
                         <li class="feature-item">
+							<div class="feature-item-image3"></div>
                             <b>Сувениры </b>
-                            <p>Не только китайского, но и местного производства!</p>
+                            <p>Не только китайского, но и местного <br> производства!</p>
                         </li>
                     </ul>
                 </div>
@@ -82,8 +77,8 @@
                         <img src="img/photo2.jpg" width="800" height="256" alt="Мост дьявола">
                     </div>
                     <div class="banner-text right">
-                        <b>Там есть мост дьявола</b>
-                        <span class="number">№2</span>
+                        <b>Там есть<br>мост дьявола</b>
+                        <span class="number"> - №2 - </span>
                         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </div>
@@ -91,18 +86,18 @@
                     <ul>
                         <li class="reasons-item">
                             <b>Небольшая площадь</b>
-                            <span class="number">№3</span>
-                            <p>Все достопримечательности находятся очень близко</p>
+                            <span class="number"> - №3 - </span>
+                            <p>Все достопримечательности <br> находятся очень близко</p>
                         </li>
                         <li class="reasons-item">
                             <b>Красивая дорога</b>
-                            <span class="number">№4</span>
-                            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                            <span class="number"> - №4 - </span>
+                            <p>Ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
                         </li>
                         <li class="reasons-item">
                             <b>Мало туристов</b>
-                            <span class="number">№5</span>
-                            <p>Большинство едет в Гранд Каньон и толпится там</p>
+                            <span class="number"> - №5 - </span>
+                            <p>Большинство едет в Гранд Каньон и <br> толпится там</p>
                         </li>
                     </ul>
                 </div>
@@ -110,27 +105,33 @@
             <div class="offer">
                 <div class="offer-title">
                     <h2>Заинтересовались?</h2>
-                    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                    <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                 </div>
                 <div class="offer-form">
-                    <h2>Поиск гостиницы в Седоне</h2>
-                    <form action="#" method="get">
-                        <label>Дата заезда:
-                            <input type="text" name="begin_date" id="begin_date" value="24 апреля 2016">
-                        </label>
-                        <label>Дата выезда:
-                            <input type="text" name="end_date" id="end_date" value="4 июля 2016">
-                        </label>
-                        <div class="count">
-                            <input type="button" value="-">
-                            <input type="text" value="2" name="men-count">
-                            <input type="button" value="+">
+                    <button type="button" class="offer-title-button">Поиск гостиницы в седоне</button>
+                    <form class="hotel-search-form" action="#" method="get">
+                        <div class="input-container">
+							<label for="begin_date">Дата заезда:</label>
+							<input class="data-field" type="text" name="begin_date" id="begin_date" value="24 апреля 2016">
+                            <button class="datapicker-button" type="button"></button>
+						</div>
+						<div class="input-container">
+							<label for="end_date">Дата выезда:</label>
+							<input class="data-field" type="text" name="end_date" id="end_date" value="4 июля 2016">
+                            <button class="datapicker-button" type="button"></button>
+						</div>
+							<label for="men-count">Взрослые:</label>
+                        <div class="count-left">
+                            <input class="button-minus" type="button">
+                            <input class="count-text" type="text" value="2" name="men-count" id="men-count">
+                            <input class="button-plus" type="button">
                         </div>
-                        <div class="count">
-                            <input type="button" value="-">
-                            <input type="text" value="2" name="child-count">
-                            <input type="button" value="+">
+                        <div class="count-right">
+                            <input class="button-minus" type="button">
+                            <input class="count-text" type="text" value="0" name="child-count" id="child-count">
+                            <input class="button-plus" type="button">
                         </div>
+						<label class="child-label" for="child-count">Дети:</label>
                         <input type="submit" value="Найти" name="search" id="search">
                     </form>
                 </div>
@@ -138,22 +139,18 @@
                 </div>
             </div>
         </main>
-        <footer class="page-footer">
-            <div class="page-footer-container clearfix">
-                <div class="footer-hashtag">
-                    #Visitsedona
-                </div>
-                <div class="footer-social">
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                </div>
-                <div class="footer-copyright">
-                    <span>Website by</span>
-                    <a>
-                        <img src="img/html_logo.png" width="113" height="39" alt="Мост дьявола">
-                    </a>
-                </div>
+        <footer class="page-footer main-page-footer clearfix">
+            <div class="footer-hashtag">
+                #Visitsedona
+            </div>
+            <div class="footer-social">
+                <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-copyright">
+                <span>Website by</span>
+				<a href="#"></a>
             </div>
         </footer>
     </body>

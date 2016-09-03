@@ -3,28 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
-                <nav class="main-navigation clearfix">
-                    <ul>
-                        <li>
+                <nav class="main-navigation">
+                    <ul class="clearfix">
+                        <li class="item-left">
                             <a href="#">Информация</a>
                         </li>
-                        <li>
+                        <li class="item-left">
                             <a href="#">Фото и видео</a>
                         </li>
-                        <li>
-                            <a>
+                        <li class="logo">
+                            <a href="#">
                                 <img src="img/logo.png" width="138" height="70" alt="Логотип">
                             </a>
                         </li>
-                        <li>
-                            <a href="#">Карта штата</a>
-                        </li>
-                        <li>
+						<li class="item-right">
                             <a href="#">Гостиницы</a>
+                        </li>
+                        <li class="item-right">
+                            <a href="#">Карта штата</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,7 +42,7 @@
                                 <label for="pool">Бассейн</label>
                             </li>
                             <li>
-                                <input type="checkbox" name="porking" id="parking">
+                                <input type="checkbox" name="parking" id="parking">
                                 <label for="parking">Парковка</label>
                             </li>
                             <li>
@@ -92,15 +94,13 @@
                 </form>
 			</div>
             <div class="search-results">
-                <div class="search-results-panel">
-                    <div class="search-results-count">
-                        <span>Найдено: 3</span>
-                    </div>
-                    <div class="search-results-sort">
+                <div class="search-results-panel clearfix">
+                    <span class="search-results-count">Найдено: 3</span>
+                    <div class="search-results-sort clearfix">
                         <span>Сортировка:</span>
                         <ul>
                             <li>
-                                <a href="#">По цене</a>
+                                <a class="current" href="#">По цене</a>
                             </li>
                             <li>
                                 <a href="#">По типу</a>
@@ -111,44 +111,50 @@
                         </ul>
                     </div>
                     <div class="search-results-buttons">
-                        <button type="button" class="sort-up-button"></button>
-                        <button type="button" class="sort-down-button"></button>
+                        <button class="sort-up-button" disabled></button>
+                        <button class="sort-down-button"></button>
                     </div>
                 </div>
                 <div class="search-results-items">
                     <ul>
                         <li class="search-result-item">
-                            <img src="img/item-photo1.jpg" width="135" height="90" alt="Пейзаж">
-                            <div class="description">
-                                <h2>Amara resort & Spa</h2>
-                                <span class="place">Гостиница</span>
-                                <span class="price">От 3500 Р.</span>
-                                <a class="btn-description">Подробнее</a>
-                                <a class="btn-bron">Забронировать</a>
-                            </div>
-                            <span class="rating">Рейтинг: 8,5</span>
+							<div class="item-content item-amara clearfix">
+								<img class="item-image" src="img/item-photo1.jpg" width="135" height="90" alt="Пейзаж">
+								<div class="description">
+									<h2><a href="#">Amara resort & Spa</a></h2>
+									<span>Гостиница</span>
+									<span>От 3500 Р.</span>
+									<a class="btn-description" href="#">Подробнее</a>
+									<a class="btn-bron" href="#">Забронировать</a>
+								</div>
+								<span class="rating">Рейтинг: 8,5</span>
+							</div>
                         </li>
                         <li class="search-result-item">
-                            <img src="img/item-photo2.jpg" width="135" height="90" alt="Пейзаж">
-                            <div class="description">
-                                <h2>Desert qual inn</h2>
-                                <span class="place">Мотель</span>
-                                <span class="price">От 2000 Р.</span>
-                                <a class="btn-description">Подробнее</a>
-                                <a class="btn-bron">Забронировать</a>
-                            </div>
-                            <span class="rating">Рейтинг: 8,9</span>
+							<div class="item-content item-desert clearfix">
+								<img class="item-image" src="img/item-photo2.jpg" width="135" height="90" alt="Пейзаж">
+								<div class="description">
+									<h2><a href="#">Desert qual inn</a></h2>
+									<span>Мотель</span>
+									<span>От 2000 Р.</span>
+									<a class="btn-description" href="#">Подробнее</a>
+									<a class="btn-bron" href="#">Забронировать</a>
+								</div>
+								<span class="rating">Рейтинг: 8,9</span>
+							</div>
                         </li>
                         <li class="search-result-item">
-                            <img src="img/item-photo3.jpg" width="135" height="90" alt="Пейзаж">
-                            <div class="description">
-                                <h2>Villas at poco diablo</h2>
-                                <span class="place">Апартаменты</span>
-                                <span class="price">От 4000 Р.</span>
-                                <a class="btn-description">Подробнее</a>
-                                <a class="btn-bron">Забронировать</a>
-                            </div>
-                            <span class="rating">Рейтинг: 9,2</span>
+							<div class="item-content item-villas clearfix">
+								<img class="item-image" src="img/item-photo3.jpg" width="135" height="90" alt="Пейзаж">
+								<div class="description">
+									<h2><a href="#">Villas at poco diablo</a></h2>
+									<span>Апартаменты</span>
+									<span>От 4000 Р.</span>
+									<a class="btn-description" href="#">Подробнее</a>
+									<a class="btn-bron" href="#">Забронировать</a>
+								</div>
+								<span class="rating">Рейтинг: 9,2</span>
+							</div>
                         </li>
                     </ul>
                 </div>
@@ -159,15 +165,13 @@
                 #Visitsedona
             </div>
             <div class="footer-social">
-                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-tw" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </div>
             <div class="footer-copyright">
                 <span>Website by</span>
-                <a>
-                    <img src="img/html_logo.png" width="113" height="39" alt="Мост дьявола">
-                </a>
+				<a href="#"></a>
             </div>
         </footer>
     </body>
